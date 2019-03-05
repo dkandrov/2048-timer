@@ -34,7 +34,7 @@ GameManager.prototype.endTime = function() {
 GameManager.prototype.updateTimer = function(startTime) {
   var curTime = new Date();
   if(this.won && !this.keepPlaying){
-    this.startTime += 10;
+    this.startTime = new Date(this.startTime.getTime() + 10);
     startTime = this.startTime;
   }
   var time = curTime.getTime() - startTime.getTime();
