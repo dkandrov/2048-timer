@@ -19,7 +19,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 GameManager.prototype.startTimer = function() {
   this.timerStatus = 1;
   this.startTime = new Date()
-  this.timerID = setInterval( this.updateTimer, 10, this.startTime);
+  this.timerID = setInterval( this.updateTimer.bind(this), 10, this.startTime);
   
 };
 
@@ -53,7 +53,7 @@ GameManager.prototype.restart = function () {
   document.getElementById("timer2048").innerHTML = "";
   document.getElementById("timer4096").innerHTML = "";
   document.getElementById("timer8192").innerHTML = "";
-  document.getElementById("timer12384").innerHTML = "";
+  document.getElementById("timer16384").innerHTML = "";
 
 };
 
