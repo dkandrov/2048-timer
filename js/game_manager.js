@@ -214,38 +214,38 @@ GameManager.prototype.move = function (direction) {
 
           //Tile is made
           if (merged.value === 16  &&  document.getElementById("timer16").innerHTML === ""){
-            document.getElementById("timer16").innerHTML = pretty(time);
+            document.getElementById("timer16").innerHTML = pretty(self.time);
           }
           if (merged.value === 32  &&  document.getElementById("timer32").innerHTML === ""){
-            document.getElementById("timer32").innerHTML = pretty(time);
+            document.getElementById("timer32").innerHTML = pretty(self.time);
           }
           if (merged.value === 64  &&  document.getElementById("timer64").innerHTML === ""){
-            document.getElementById("timer64").innerHTML = pretty(time);
+            document.getElementById("timer64").innerHTML = pretty(self.time);
           }
           if (merged.value === 128  &&  document.getElementById("timer128").innerHTML === ""){
-            document.getElementById("timer128").innerHTML = pretty(time);
+            document.getElementById("timer128").innerHTML = pretty(self.time);
           }
           if (merged.value === 256  &&  document.getElementById("timer256").innerHTML === ""){
-            document.getElementById("timer256").innerHTML = pretty(time);
+            document.getElementById("timer256").innerHTML = pretty(self.time);
           }
           if (merged.value === 512  &&  document.getElementById("timer512").innerHTML === ""){
-            document.getElementById("timer512").innerHTML = pretty(time);
+            document.getElementById("timer512").innerHTML = pretty(self.time);
           }
           if (merged.value === 1024  &&  document.getElementById("timer1024").innerHTML === ""){
-            document.getElementById("timer1024").innerHTML = pretty(time);
+            document.getElementById("timer1024").innerHTML = pretty(self.time);
           }
           if (merged.value === 2048  &&  document.getElementById("timer2048").innerHTML === ""){
             self.won = true;
-            document.getElementById("timer2048").innerHTML = pretty(time);
+            document.getElementById("timer2048").innerHTML = pretty(self.time);
           }
           if (merged.value === 4096  &&  document.getElementById("timer4096").innerHTML === ""){
-            document.getElementById("timer4096").innerHTML = pretty(time);
+            document.getElementById("timer4096").innerHTML = pretty(self.time);
           }
           if (merged.value === 8192  &&  document.getElementById("timer8192").innerHTML === ""){
-            document.getElementById("timer8192").innerHTML = pretty(time);
+            document.getElementById("timer8192").innerHTML = pretty(self.time);
           }
           if (merged.value === 16384  &&  document.getElementById("timer16384").innerHTML === ""){
-            document.getElementById("timer16384").innerHTML = pretty(time);
+            document.getElementById("timer16384").innerHTML = pretty(self.time);
           }
 
         } else {
